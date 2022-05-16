@@ -26,28 +26,29 @@
                 <h2 class="title">Add/Edit article</h2>
                 <div class="input_container">
                     <div class="line1">
-                        <input type="text" class="input_item" placeholder="Please enter title">
-                        <input type="text" class="input_item" placeholder="Please enter tag">
+                        <input type="text" class="input_item" id="title" placeholder="Please enter title">
+                        <input type="text" class="input_item" id="tag" placeholder="Please enter tag">
                     </div>
                     <div class="line2">
-                        <input type="text" class="input_item" placeholder="Please enter author">
-                        <input type="text" class="input_item" placeholder="Please enter date">
+                        <input type="text" class="input_item" id="author" placeholder="Please enter author">
+                        <input type="text" class="input_item" id="date" placeholder="Please enter date">
                     </div>
                     <div class="line3">
-                        <input type="text" class="input_item_2" placeholder="Please enter image url">
+                        <input type="text" class="input_item_2" id="image" placeholder="Please enter image url">
                     </div>
                 </div>
                 <div class="text_container">
-                    <textarea class="textarea" name="content" id="" cols="30" rows="10"
+                    <textarea class="textarea" name="content" id="textArea" cols="30" rows="10"
                         placeholder="Please enter content"></textarea>
                 </div>
                 <div class="button_container">
-                    <button type="button" class="button">Cancel</button>
-                    <button type="button" class="button_pink">Save</button>
+                    <button type="button" class="button" id="cancelButton">Cancel</button>
+                    <button type="button" class="button_pink" id="saveButton">Save</button>
                 </div>
             </div>
         </div>
     </div>
+    <script type="module" src="scriptModal.js"></script>
 </body>
 
 </html>

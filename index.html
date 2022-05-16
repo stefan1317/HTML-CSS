@@ -24,7 +24,7 @@
             </ul>
         </nav>
         <div class="button_container">
-            <button type ="button" class="button">+ ADD ARTICLE</button>
+            <button type ="button" class="button" id="addButton">+ ADD ARTICLE</button>
         </div>
         <div class="articles-container">
             <article class="article">
@@ -39,9 +39,9 @@
                     <div class="title_item">July 01, 2018</div>
                 </div>
                 <div class="edit_container">
-                    <div class="edit_item">Edit</div>
+                    <button class="edit_item">Edit</button>
                     <div class="edit_item">|</div>
-                    <div class="edit_item">Delete</div>
+                    <button class="edit_item">Delete</button>
                 </div>
                 <img src="img/bike.jpg" alt="bike">
                 <div class="paragraph">
@@ -74,9 +74,9 @@
                     <div class="title_item">June 30, 2018</div>
                 </div>
                 <div class="edit_container">
-                    <div class="edit_item">Edit</div>
+                    <button class="edit_item">Edit</button>
                     <div class="edit_item">|</div>
-                    <div class="edit_item">Delete</div>
+                    <button class="edit_item">Delete</button>
                 </div>
                 <img src="img/bucegi.jpg" alt="bucegi">
                 <div class="paragraph">
@@ -108,9 +108,9 @@
                     <div class="title_item">June 17, 2018</div>
                 </div>
                 <div class="edit_container">
-                    <div class="edit_item">Edit</div>
+                    <button class="edit_item">Edit</button>
                     <div class="edit_item">|</div>
-                    <div class="edit_item">Delete</div>
+                    <button class="edit_item">Delete</button>
                 </div>
                 <img src="img/village.jpg" alt="village">
                 <div class="paragraph">
@@ -143,9 +143,9 @@
                     <div class="title_item">December 29, 2017</div>
                 </div>
                 <div class="edit_container">
-                    <div class="edit_item">Edit</div>
+                    <button class="edit_item">Edit</button>
                     <div class="edit_item">|</div>
-                    <div class="edit_item">Delete</div>
+                    <button class="edit_item">Delete</button>
                 </div>
                 <img src="img/sarmale.jpg" alt="sarmale">
                 <div class="paragraph">
@@ -178,9 +178,9 @@
                     <div class="title_item">November 29, 2017</div>
                 </div>
                 <div class="edit_container">
-                    <div class="edit_item">Edit</div>
+                    <button class="edit_item">Edit</button>
                     <div class="edit_item">|</div>
-                    <div class="edit_item">Delete</div>
+                    <button class="edit_item">Delete</button>
                 </div>
                 <img src="img/train.png" alt="train">
                 <div class="paragraph">
@@ -207,5 +207,34 @@
             </footer>
         </div>
     </div>
+    <div class="modal__overlay">
+        <div class="modal">
+            <div class="modal_container">
+                <h2 class="title">Add/Edit article</h2>
+                <div class="input_container">
+                    <div class="line1">
+                        <input type="text" class="input_item" id="title" placeholder="Please enter title">
+                        <input type="text" class="input_item" id="tag" placeholder="Please enter tag">
+                    </div>
+                    <div class="line2">
+                        <input type="text" class="input_item" id="author" placeholder="Please enter author">
+                        <input type="text" class="input_item" id="date" placeholder="Please enter date">
+                    </div>
+                    <div class="line3">
+                        <input type="text" class="input_item_2" id="image" placeholder="Please enter image url">
+                    </div>
+                </div>
+                <div class="text_container">
+                    <textarea class="textarea" name="content" id="textArea" cols="30" rows="10"
+                        placeholder="Please enter content"></textarea>
+                </div>
+                <div class="button_container">
+                    <button type="button" class="button" id="cancelButton">Cancel</button>
+                    <button type="button" class="button_pink" id="saveButton">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

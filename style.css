@@ -134,13 +134,17 @@ p {
 }
 
 .edit_item {
-    display: block;
+    background: none;
+    border: none;
+    display: flex;
     margin-left: 10px;
     margin-right: 5px;
+    padding: 5px;
     color: #1E1E1E;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 18px;
+    cursor: pointer;
 }
 
 .paragraph {
@@ -163,4 +167,8 @@ p {
     font-size: 34px;
     line-height: 42px;
     text-decoration: none;
+}
+
+.modal__overlay{
+    visibility: hidden;
 }
